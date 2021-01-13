@@ -1,0 +1,699 @@
+{
+  "data": {
+    "catalog": {
+      "category": {
+        "numOfProducts": 137,
+        "productsWithMetaData": {
+          "totalCount": 11,
+          "list": [
+            {
+              "id": "92b6bb83-6f10-db85-80f5-e4eeab300aca",
+              "options": [
+                { "id": "a584fe43-a8d1-417f-9474-fb7ea4d54363" },
+                { "id": "603111de-a487-459b-a30a-d510b677b87a" },
+                { "id": "3b05b564-f042-49b5-b067-0787522a4e9f" },
+                { "id": "2ee241c6-40ba-4f92-9d9b-37e9630cc908" },
+                { "id": "opt-20" }
+              ],
+              "customTextFields": [],
+              "productType": "physical",
+              "ribbon": "",
+              "price": 0.0,
+              "comparePrice": 0.0,
+              "sku": "cod475",
+              "isInStock": true,
+              "urlPart": "allure-w430",
+              "formattedComparePrice": "",
+              "formattedPrice": "R$ 0,00",
+              "digitalProductFileItems": [],
+              "name": "Allure W430",
+              "media": [
+                {
+                  "url": "daf591_9d2e5954b2e44c2b91cf7767da921448~mv2_d_1500_2000_s_2.jpg",
+                  "index": 0,
+                  "width": 1500,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "W430- Cod 475 (1).jpg",
+                  "height": 2000
+                },
+                {
+                  "url": "daf591_c9ab05c889164cc289abb33c81c22551~mv2_d_1500_2000_s_2.jpg",
+                  "index": 1,
+                  "width": 1500,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "W430- Cod 475 (3).jpg",
+                  "height": 2000
+                },
+                {
+                  "url": "daf591_3d58c77b59684e82a3fe7d2da84930b2~mv2_d_1500_2000_s_2.jpg",
+                  "index": 2,
+                  "width": 1500,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "W430- Cod 475 (4).jpg",
+                  "height": 2000
+                },
+                {
+                  "url": "daf591_0ba0b9a9eee44e31912bb99ac31c48d3~mv2.jpg",
+                  "index": 3,
+                  "width": 1500,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "W430- Cod 475 (2).jpg",
+                  "height": 1125
+                },
+                {
+                  "url": "daf591_ca764f49434e45faac8aa13d11ef6a66~mv2_d_1500_2000_s_2.jpg",
+                  "index": 4,
+                  "width": 1500,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "W430- Cod 475 (5).jpg",
+                  "height": 2000
+                }
+              ],
+              "isManageProductItems": false,
+              "isTrackingInventory": false,
+              "inventory": { "status": "in_stock", "quantity": 0 },
+              "subscriptionPlans": { "list": [] }
+            },
+            {
+              "id": "2ec28d7e-ffe5-8b0e-9252-65c377dfa824",
+              "options": [
+                { "id": "a584fe43-a8d1-417f-9474-fb7ea4d54363" },
+                { "id": "603111de-a487-459b-a30a-d510b677b87a" },
+                { "id": "3b05b564-f042-49b5-b067-0787522a4e9f" },
+                { "id": "2ee241c6-40ba-4f92-9d9b-37e9630cc908" }
+              ],
+              "customTextFields": [],
+              "productType": "physical",
+              "ribbon": "",
+              "price": 0.0,
+              "comparePrice": 0.0,
+              "sku": "cod391",
+              "isInStock": true,
+              "urlPart": "la-fiancée-p933",
+              "formattedComparePrice": "",
+              "formattedPrice": "R$ 0,00",
+              "digitalProductFileItems": [],
+              "name": "La Fiancée P933",
+              "media": [
+                {
+                  "url": "daf591_5d15e5c60a9a485d88683a409719813f~mv2.jpg",
+                  "index": 0,
+                  "width": 853,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cod 391- .P933 (7).jpg",
+                  "height": 1280
+                },
+                {
+                  "url": "daf591_f8583bb55a8f413c8bf8cb2fbc89637f~mv2.jpg",
+                  "index": 1,
+                  "width": 853,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cod 391- .P933 (17).jpg",
+                  "height": 1280
+                },
+                {
+                  "url": "daf591_5d702db794974be28edf534334e3886f~mv2.jpg",
+                  "index": 2,
+                  "width": 853,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cod 391- .P933 (24).jpg",
+                  "height": 1280
+                },
+                {
+                  "url": "daf591_6c27d4c37ff8482d934cd0c97134871f~mv2.jpg",
+                  "index": 3,
+                  "width": 853,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cod 391- .P933 (15).jpg",
+                  "height": 1280
+                },
+                {
+                  "url": "daf591_79cc55c2e20e421daa3a4d91af8fb971~mv2.jpg",
+                  "index": 4,
+                  "width": 853,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cod 391- .P933 (23).jpg",
+                  "height": 1280
+                },
+                {
+                  "url": "daf591_d93964c988b74a32bd724eb44acdc758~mv2.jpg",
+                  "index": 5,
+                  "width": 853,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cod 391- .P933 (25).jpg",
+                  "height": 1280
+                }
+              ],
+              "isManageProductItems": false,
+              "isTrackingInventory": false,
+              "inventory": { "status": "in_stock", "quantity": 0 },
+              "subscriptionPlans": { "list": [] }
+            },
+            {
+              "id": "fa68f00c-a17c-d88f-092d-016793462e23",
+              "options": [
+                { "id": "3b05b564-f042-49b5-b067-0787522a4e9f" },
+                { "id": "a584fe43-a8d1-417f-9474-fb7ea4d54363" },
+                { "id": "2ee241c6-40ba-4f92-9d9b-37e9630cc908" },
+                { "id": "603111de-a487-459b-a30a-d510b677b87a" }
+              ],
+              "customTextFields": [],
+              "productType": "physical",
+              "ribbon": "",
+              "price": 0.0,
+              "comparePrice": 0.0,
+              "sku": "cod450",
+              "isInStock": true,
+              "urlPart": "la-fiancée-relative-princesa",
+              "formattedComparePrice": "",
+              "formattedPrice": "R$ 0,00",
+              "digitalProductFileItems": [],
+              "name": "La Fiancée Relative Princesa",
+              "media": [
+                {
+                  "url": "daf591_67a9982441f84d0194ece0aa1f151931~mv2.jpg",
+                  "index": 0,
+                  "width": 853,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cod 450- Relative Princesa (2).jpg",
+                  "height": 1280
+                },
+                {
+                  "url": "daf591_065080ef1ab44457ab9d2c77b7502469~mv2.jpg",
+                  "index": 1,
+                  "width": 853,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cod 450- Relative Princesa (7).jpg",
+                  "height": 1280
+                },
+                {
+                  "url": "daf591_5d9fcc78d9034acb85bf96b707faa2a9~mv2.jpg",
+                  "index": 2,
+                  "width": 853,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cod 450- Relative Princesa (6).jpg",
+                  "height": 1280
+                },
+                {
+                  "url": "daf591_fc5d252c3503487ba60fa59d2f9a7fe4~mv2.jpg",
+                  "index": 3,
+                  "width": 853,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cod 450- Relative Princesa (3).jpg",
+                  "height": 1280
+                },
+                {
+                  "url": "daf591_2183a949deb8406ebe5a4fbee679933a~mv2.jpg",
+                  "index": 4,
+                  "width": 853,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cod 450- Relative Princesa (4).jpg",
+                  "height": 1280
+                }
+              ],
+              "isManageProductItems": false,
+              "isTrackingInventory": false,
+              "inventory": { "status": "in_stock", "quantity": 0 },
+              "subscriptionPlans": { "list": [] }
+            },
+            {
+              "id": "7e152eb9-bd34-23f3-3a41-6d4c651ee98a",
+              "options": [
+                { "id": "a584fe43-a8d1-417f-9474-fb7ea4d54363" },
+                { "id": "603111de-a487-459b-a30a-d510b677b87a" },
+                { "id": "3b05b564-f042-49b5-b067-0787522a4e9f" },
+                { "id": "2ee241c6-40ba-4f92-9d9b-37e9630cc908" }
+              ],
+              "customTextFields": [],
+              "productType": "physical",
+              "ribbon": "",
+              "price": 0.0,
+              "comparePrice": 0.0,
+              "sku": "cod397",
+              "isInStock": true,
+              "urlPart": "la-fiancée-p931",
+              "formattedComparePrice": "",
+              "formattedPrice": "R$ 0,00",
+              "digitalProductFileItems": [],
+              "name": "La Fiancée P931",
+              "media": [
+                {
+                  "url": "daf591_61d2c84fa6674c25b6b506cb9fc1818a~mv2.jpg",
+                  "index": 0,
+                  "width": 853,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cod 397- .P931 (4).jpg",
+                  "height": 1280
+                },
+                {
+                  "url": "daf591_954ad73718944701a465459bed33c90e~mv2.jpg",
+                  "index": 1,
+                  "width": 853,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cod 397- .P931 (20).jpg",
+                  "height": 1280
+                },
+                {
+                  "url": "daf591_3732e9ee96c7477bbb2a3b5ee73d8af5~mv2.jpg",
+                  "index": 2,
+                  "width": 853,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cod 397- .P931 (10).jpg",
+                  "height": 1280
+                },
+                {
+                  "url": "daf591_c7d97561f5464f77b4ca72d6d262a8f3~mv2.jpg",
+                  "index": 3,
+                  "width": 853,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cod 397- .P931 (13).jpg",
+                  "height": 1280
+                },
+                {
+                  "url": "daf591_b01e391f725142e0ade17cd194d274a5~mv2.jpg",
+                  "index": 4,
+                  "width": 853,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cod 397- .P931 (7).jpg",
+                  "height": 1280
+                }
+              ],
+              "isManageProductItems": false,
+              "isTrackingInventory": false,
+              "inventory": { "status": "in_stock", "quantity": 0 },
+              "subscriptionPlans": { "list": [] }
+            },
+            {
+              "id": "da4f0048-2251-4709-840a-7d3aeaf2209f",
+              "options": [
+                { "id": "603111de-a487-459b-a30a-d510b677b87a" },
+                { "id": "3b05b564-f042-49b5-b067-0787522a4e9f" },
+                { "id": "a584fe43-a8d1-417f-9474-fb7ea4d54363" },
+                { "id": "2ee241c6-40ba-4f92-9d9b-37e9630cc908" }
+              ],
+              "customTextFields": [],
+              "productType": "physical",
+              "ribbon": "",
+              "price": 0.0,
+              "comparePrice": 0.0,
+              "sku": "cod386",
+              "isInStock": true,
+              "urlPart": "allure-9400",
+              "formattedComparePrice": "",
+              "formattedPrice": "R$ 0,00",
+              "digitalProductFileItems": [],
+              "name": "Allure 9400",
+              "media": [
+                {
+                  "url": "daf591_1e823ee8f1ed46b18da5cde171c68333~mv2.jpg",
+                  "index": 0,
+                  "width": 480,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "9400F (Copy).jpg",
+                  "height": 640
+                },
+                {
+                  "url": "daf591_bdc8e40456e64281a333c4f1babff681~mv2.jpg",
+                  "index": 1,
+                  "width": 480,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "9400B (Copy).jpg",
+                  "height": 640
+                }
+              ],
+              "isManageProductItems": false,
+              "isTrackingInventory": false,
+              "inventory": { "status": "in_stock", "quantity": 0 },
+              "subscriptionPlans": { "list": [] }
+            },
+            {
+              "id": "6f961ca0-fa3d-4103-b67a-5e3dab0fa563",
+              "options": [
+                { "id": "603111de-a487-459b-a30a-d510b677b87a" },
+                { "id": "3b05b564-f042-49b5-b067-0787522a4e9f" },
+                { "id": "a584fe43-a8d1-417f-9474-fb7ea4d54363" },
+                { "id": "2ee241c6-40ba-4f92-9d9b-37e9630cc908" }
+              ],
+              "customTextFields": [],
+              "productType": "physical",
+              "ribbon": "",
+              "price": 0.0,
+              "comparePrice": 0.0,
+              "sku": "cod298",
+              "isInStock": true,
+              "urlPart": "allure-3110",
+              "formattedComparePrice": "",
+              "formattedPrice": "R$ 0,00",
+              "digitalProductFileItems": [],
+              "name": "Allure 3110",
+              "media": [
+                {
+                  "url": "daf591_3aa549db85a64aa6ad90bd78e592b40e~mv2.jpg",
+                  "index": 0,
+                  "width": 608,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "3110-F2 (Copy).jpg",
+                  "height": 810
+                },
+                {
+                  "url": "daf591_067f78d3fd674fc1b563f49df4517a50~mv2.jpg",
+                  "index": 1,
+                  "width": 608,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "3110B (Copy).jpg",
+                  "height": 810
+                },
+                {
+                  "url": "daf591_0e30e73862614fbc9c3542ae117f1002~mv2.jpg",
+                  "index": 2,
+                  "width": 608,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "3110S (Copy).jpg",
+                  "height": 810
+                }
+              ],
+              "isManageProductItems": false,
+              "isTrackingInventory": false,
+              "inventory": { "status": "in_stock", "quantity": 0 },
+              "subscriptionPlans": { "list": [] }
+            },
+            {
+              "id": "bcb72b70-720e-4af7-9397-4f58193ba177",
+              "options": [
+                { "id": "603111de-a487-459b-a30a-d510b677b87a" },
+                { "id": "3b05b564-f042-49b5-b067-0787522a4e9f" },
+                { "id": "a584fe43-a8d1-417f-9474-fb7ea4d54363" },
+                { "id": "2ee241c6-40ba-4f92-9d9b-37e9630cc908" }
+              ],
+              "customTextFields": [],
+              "productType": "physical",
+              "ribbon": "",
+              "price": 0.0,
+              "comparePrice": 0.0,
+              "sku": "cod018",
+              "isInStock": true,
+              "urlPart": "allure-9425",
+              "formattedComparePrice": "",
+              "formattedPrice": "R$ 0,00",
+              "digitalProductFileItems": [],
+              "name": "Allure 9425",
+              "media": [
+                {
+                  "url": "daf591_e75c4b7570ad4ae1952aae61839d55e4~mv2.jpg",
+                  "index": 0,
+                  "width": 480,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "9425-F.jpg",
+                  "height": 640
+                },
+                {
+                  "url": "daf591_1bb7fabea93f477a907fd2b9a4572ab5~mv2.jpg",
+                  "index": 1,
+                  "width": 480,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "9425-C.jpg",
+                  "height": 640
+                },
+                {
+                  "url": "daf591_61c43f4fd1b043949af13e610431d437~mv2.jpg",
+                  "index": 2,
+                  "width": 480,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "9425-B.jpg",
+                  "height": 360
+                },
+                {
+                  "url": "daf591_08e81cc68c304eedad9be63a3cd29076~mv2.jpg",
+                  "index": 3,
+                  "width": 480,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "9425-E.jpg",
+                  "height": 640
+                }
+              ],
+              "isManageProductItems": false,
+              "isTrackingInventory": false,
+              "inventory": { "status": "in_stock", "quantity": 0 },
+              "subscriptionPlans": { "list": [] }
+            },
+            {
+              "id": "62c51f3b-e52f-4e0a-b650-eef81f625ad5",
+              "options": [
+                { "id": "603111de-a487-459b-a30a-d510b677b87a" },
+                { "id": "3b05b564-f042-49b5-b067-0787522a4e9f" },
+                { "id": "a584fe43-a8d1-417f-9474-fb7ea4d54363" },
+                { "id": "2ee241c6-40ba-4f92-9d9b-37e9630cc908" }
+              ],
+              "customTextFields": [],
+              "productType": "physical",
+              "ribbon": "",
+              "price": 0.0,
+              "comparePrice": 0.0,
+              "sku": "cod267",
+              "isInStock": true,
+              "urlPart": "maggie-sottero-emily",
+              "formattedComparePrice": "",
+              "formattedPrice": "R$ 0,00",
+              "digitalProductFileItems": [],
+              "name": "Maggie Sottero Emily",
+              "media": [
+                {
+                  "url": "daf591_bbf4061e23f5430190e3724ad6feaf0c~mv2.jpg",
+                  "index": 0,
+                  "width": 800,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "MaggieSottero-Emily-7MC991-800x800 (Copy",
+                  "height": 800
+                },
+                {
+                  "url": "daf591_a41fa8a4ad7f47629ff72c999a4c1765~mv2.jpg",
+                  "index": 1,
+                  "width": 180,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cu00f3pia de Emily1 (Copy).jpg",
+                  "height": 240
+                },
+                {
+                  "url": "daf591_67a6c150187c4a4b9caa90c7a9c1313b~mv2.jpg",
+                  "index": 2,
+                  "width": 608,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cu00f3pia de Emily (Copy).jpg",
+                  "height": 810
+                },
+                {
+                  "url": "daf591_2af1d0fb74504df79447b3e36d891249~mv2.jpg",
+                  "index": 3,
+                  "width": 800,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "Cu00f3pia de MaggieSottero-Emily-7MC991-",
+                  "height": 800
+                }
+              ],
+              "isManageProductItems": false,
+              "isTrackingInventory": false,
+              "inventory": { "status": "in_stock", "quantity": 0 },
+              "subscriptionPlans": { "list": [] }
+            },
+            {
+              "id": "246aa559-fe2f-418c-b143-d27f16f635ef",
+              "options": [
+                { "id": "603111de-a487-459b-a30a-d510b677b87a" },
+                { "id": "3b05b564-f042-49b5-b067-0787522a4e9f" },
+                { "id": "a584fe43-a8d1-417f-9474-fb7ea4d54363" },
+                { "id": "2ee241c6-40ba-4f92-9d9b-37e9630cc908" }
+              ],
+              "customTextFields": [],
+              "productType": "physical",
+              "ribbon": "",
+              "price": 0.0,
+              "comparePrice": 0.0,
+              "sku": "cod289",
+              "isInStock": true,
+              "urlPart": "allure-9501",
+              "formattedComparePrice": "",
+              "formattedPrice": "R$ 0,00",
+              "digitalProductFileItems": [],
+              "name": "Allure 9501",
+              "media": [
+                {
+                  "url": "daf591_c998c44232e1436e824773b8d406080d~mv2.jpg",
+                  "index": 0,
+                  "width": 480,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "9501A (Copy).jpg",
+                  "height": 640
+                },
+                {
+                  "url": "daf591_435f58f79178420484c060091b8604c5~mv2.jpg",
+                  "index": 1,
+                  "width": 608,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "9501C (Copy).jpg",
+                  "height": 810
+                },
+                {
+                  "url": "daf591_8fe22d5ecae04b18a397c59293380112~mv2.jpg",
+                  "index": 2,
+                  "width": 608,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "9501B (Copy).jpg",
+                  "height": 810
+                },
+                {
+                  "url": "daf591_657d20a217e24a8e8b43fb31450509df~mv2.jpg",
+                  "index": 3,
+                  "width": 480,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "9501D (Copy).jpg",
+                  "height": 640
+                }
+              ],
+              "isManageProductItems": false,
+              "isTrackingInventory": false,
+              "inventory": { "status": "in_stock", "quantity": 0 },
+              "subscriptionPlans": { "list": [] }
+            },
+            {
+              "id": "30fda5ae-47e4-422a-855c-7693b5115b60",
+              "options": [
+                { "id": "603111de-a487-459b-a30a-d510b677b87a" },
+                { "id": "3b05b564-f042-49b5-b067-0787522a4e9f" },
+                { "id": "a584fe43-a8d1-417f-9474-fb7ea4d54363" },
+                { "id": "2ee241c6-40ba-4f92-9d9b-37e9630cc908" }
+              ],
+              "customTextFields": [],
+              "productType": "physical",
+              "ribbon": "",
+              "price": 0.0,
+              "comparePrice": 0.0,
+              "sku": "COD453",
+              "isInStock": true,
+              "urlPart": "allure-9620",
+              "formattedComparePrice": "",
+              "formattedPrice": "R$ 0,00",
+              "digitalProductFileItems": [],
+              "name": "Allure 9620",
+              "media": [
+                {
+                  "url": "daf591_c0a80a97d6d54f899d21c7120c63dbdc~mv2.jpg",
+                  "index": 0,
+                  "width": 480,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "9620 A-A (Copy).jpg",
+                  "height": 640
+                },
+                {
+                  "url": "daf591_150420ae834749baac1bd8819286427a~mv2.jpg",
+                  "index": 1,
+                  "width": 480,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "9620D (Copy).jpg",
+                  "height": 640
+                },
+                {
+                  "url": "daf591_d6036c164cd443de80be1d114e4ba3ce~mv2.jpg",
+                  "index": 2,
+                  "width": 480,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "9620B (Copy).jpg",
+                  "height": 640
+                }
+              ],
+              "isManageProductItems": false,
+              "isTrackingInventory": false,
+              "inventory": { "status": "in_stock", "quantity": 0 },
+              "subscriptionPlans": { "list": [] }
+            },
+            {
+              "id": "1f48a12b-6dc9-4a1f-be94-e0b215a77210",
+              "options": [
+                { "id": "603111de-a487-459b-a30a-d510b677b87a" },
+                { "id": "3b05b564-f042-49b5-b067-0787522a4e9f" },
+                { "id": "a584fe43-a8d1-417f-9474-fb7ea4d54363" },
+                { "id": "2ee241c6-40ba-4f92-9d9b-37e9630cc908" }
+              ],
+              "customTextFields": [],
+              "productType": "physical",
+              "ribbon": "",
+              "price": 0.0,
+              "comparePrice": 0.0,
+              "sku": "cod316",
+              "isInStock": true,
+              "urlPart": "marca-melissa-sweet",
+              "formattedComparePrice": "",
+              "formattedPrice": "R$ 0,00",
+              "digitalProductFileItems": [],
+              "name": "Marca Melissa Sweet",
+              "media": [
+                {
+                  "url": "daf591_e1a483b66a084ceea6c8e225e395538c~mv2.jpg",
+                  "index": 0,
+                  "width": 540,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "melissa sweet 2 (Copy).jpg",
+                  "height": 810
+                },
+                {
+                  "url": "daf591_35439db0ade24cb49c16a27c9832ac56~mv2.jpg",
+                  "index": 1,
+                  "width": 540,
+                  "mediaType": "PHOTO",
+                  "altText": null,
+                  "title": "melissa sweet 1 (Copy).jpg",
+                  "height": 810
+                }
+              ],
+              "isManageProductItems": false,
+              "isTrackingInventory": false,
+              "inventory": { "status": "in_stock", "quantity": 0 },
+              "subscriptionPlans": { "list": [] }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
