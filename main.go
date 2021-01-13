@@ -12,168 +12,10 @@ import (
 func main() {
 	//productID := "allure-3110"
 	jsonQuery := map[string]string{
-		"query": `query getProductBySlug($externalId: String!, $slug: String!, $withPricePerUnit: Boolean!, $withCountryCodes: Boolean!) {
-			appSettings(externalId: $externalId) {
-				widgetSettings
-	}
-	catalog {
-				product(slug: $slug, onlyVisible: true) {
-						id
-						description
-						isVisible
-						sku
-						ribbon
-						price
-						comparePrice
-						discountedPrice
-						formattedPrice
-						formattedComparePrice
-						formattedDiscountedPrice
-						pricePerUnit @include(if: $withPricePerUnit)
-						formattedPricePerUnit @include(if: $withPricePerUnit)
-						pricePerUnitData @include(if: $withPricePerUnit) {
-						baseQuantity
-						baseMeasurementUnit
-			}
-			seoTitle
-			seoDescription
-			createVersion
-			digitalProductFileItems {
-						fileId
-						fileType
-						fileName
-			}
-			productItems {
-						price
-						comparePrice
-						formattedPrice
-						formattedComparePrice
-						pricePerUnit @include(if: $withPricePerUnit)
-						formattedPricePerUnit @include(if: $withPricePerUnit)
-						optionsSelections
-						isVisible
-						inventory {
-						status
-						quantity
-				}
-				sku
-				weight
-				surcharge
-				subscriptionPlans {
-						list {
-						id
-						price
-						formattedPrice
-						pricePerUnit @include(if: $withPricePerUnit)
-						formattedPricePerUnit @include(if: $withPricePerUnit)
-					}
-				}
-			}
-			name
-			isTrackingInventory
-			inventory {
-				status
-				quantity
-			}
-			isVisible
-			isManageProductItems
-			isInStock
-			media {
-				id
-				url
-				fullUrl
-				altText
-				thumbnailFullUrl: fullUrl(width: 50, height: 50)
-				mediaType
-				videoType
-				videoFiles {
-						url
-						width
-						height
-						format
-						quality
-				}
-				width
-				height
-				index
-				title
-			}
-			customTextFields {
-				title
-				isMandatory
-				inputLimit
-			}
-			nextOptionsSelectionId
-			options {
-				title
-				optionType
-				selections {
-						id
-						value
-						description
-						linkedMediaItems {
-								altText
-								url
-								fullUrl
-								thumbnailFullUrl: fullUrl(width: 50, height: 50)
-								mediaType
-								width
-								height
-								index
-								title
-								videoFiles {
-										url
-										width
-										height
-										format
-										quality
-								}
-						}
-				}
-			}
-			productType
-			urlPart
-			additionalInfo {
-						id
-				title
-				description
-				index
-			}
-			subscriptionPlans {
-						list(onlyVisible: true) {
-							id
-					name
-					tagline
-					frequency
-					duration
-					price
-					formattedPrice
-					pricePerUnit @include(if: $withPricePerUnit)
-					formattedPricePerUnit @include(if: $withPricePerUnit)
-				}
-				oneTimePurchase {
-							index
-				}
-			}
-			discount {
-						mode
-				value
-			}
-			currency
-			weight
-			seoJson
-		}
-	}
-	localeData(language: "en") @include(if: $withCountryCodes) {
-				countries {
-					key
-			shortKey
-		}
-	}
-},"variables":{"slug":"allure-3110","externalId":"","withPricePerUnit":true,"withCountryCodes":false}`,
-	}
+		"query": "query getProductBySlug($externalId: String!, $slug: String!, $withPricePerUnit: Boolean!, $withCountryCodes: Boolean!) {\n          appSettings(externalId: $externalId) {\n            widgetSettings\n      }\n      catalog {\n            product(slug: $slug, onlyVisible: true) {\n                id\n                description\n                isVisible\n                sku\n                ribbon\n                price\n                comparePrice\n                discountedPrice\n                formattedPrice\n                formattedComparePrice\n                formattedDiscountedPrice\n                pricePerUnit @include(if: $withPricePerUnit)\n                formattedPricePerUnit @include(if: $withPricePerUnit)\n                pricePerUnitData @include(if: $withPricePerUnit) {\n                baseQuantity\n                baseMeasurementUnit\n          }\n          seoTitle\n          seoDescription\n          createVersion\n          digitalProductFileItems {\n                fileId\n                fileType\n                fileName\n          }\n          productItems {\n                price\n                comparePrice\n                formattedPrice\n                formattedComparePrice\n                pricePerUnit @include(if: $withPricePerUnit)\n                formattedPricePerUnit @include(if: $withPricePerUnit)\n                optionsSelections\n                isVisible\n                inventory {\n                status\n                quantity\n            }\n            sku\n            weight\n            surcharge\n            subscriptionPlans {\n                list {\n                id\n                price\n                formattedPrice\n                pricePerUnit @include(if: $withPricePerUnit)\n                formattedPricePerUnit @include(if: $withPricePerUnit)\n              }\n            }\n          }\n          name\n          isTrackingInventory\n          inventory {\n            status\n            quantity\n          }\n          isVisible\n          isManageProductItems\n          isInStock\n          media {\n            id\n            url\n            fullUrl\n            altText\n            thumbnailFullUrl: fullUrl(width: 50, height: 50)\n            mediaType\n            videoType\n            videoFiles {\n                url\n                width\n                height\n                format\n                quality\n            }\n            width\n            height\n            index\n            title\n          }\n          customTextFields {\n            title\n            isMandatory\n            inputLimit\n          }\n          nextOptionsSelectionId\n          options {\n            title\n            optionType\n            selections {\n                id\n                value\n                description\n                linkedMediaItems {\n                    altText\n                    url\n                    fullUrl\n                    thumbnailFullUrl: fullUrl(width: 50, height: 50)\n                    mediaType\n                    width\n                    height\n                    index\n                    title\n                    videoFiles {\n                        url\n                        width\n                        height\n                        format\n                        quality\n                    }\n                }\n            }\n          }\n          productType\n          urlPart\n          additionalInfo {\n                id\n            title\n            description\n            index\n          }\n          subscriptionPlans {\n                list(onlyVisible: true) {\n                  id\n              name\n              tagline\n              frequency\n              duration\n              price\n              formattedPrice\n              pricePerUnit @include(if: $withPricePerUnit)\n              formattedPricePerUnit @include(if: $withPricePerUnit)\n            }\n            oneTimePurchase {\n                  index\n            }\n          }\n          discount {\n                mode\n            value\n          }\n          currency\n          weight\n          seoJson\n        }\n      }\n      localeData(language: \"en\") @include(if: $withCountryCodes) {\n            countries {\n              key\n          shortKey\n        }\n      }\n    }", "variables": `{"slug":"allure-3110","externalId":"","withPricePerUnit":true,"withCountryCodes":false}}`}
 
 	jsonValue, err := json.Marshal(jsonQuery)
+	fmt.Println(string(jsonValue))
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -187,6 +29,7 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
+	fmt.Println(req)
 	defer response.Body.Close()
 	data, _ := ioutil.ReadAll(response.Body)
 	fmt.Println(string(data))
