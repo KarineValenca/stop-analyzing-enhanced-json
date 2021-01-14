@@ -6,8 +6,16 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"os"
 	"time"
 )
+
+type Dresses struct {
+	Dresses []Dress `json:"dresses"`
+}
+type Dress struct {
+	Slug string `json:"urlPart"`
+}
 
 func main() {
 	//productID := "allure-3110"
@@ -18,6 +26,7 @@ func main() {
 
 	data, _ := fetchData(jsonQuery, authorizationToken)
 	fmt.Println(string(data))
+	readJSON()
 }
 
 func fetchData(jsonQuery map[string]string, authorizationToken string) ([]byte, error) {
@@ -49,4 +58,23 @@ func fetchData(jsonQuery map[string]string, authorizationToken string) ([]byte, 
 	}
 
 	return data, nil
+}
+
+func readJSON() error {
+	jsonFile, err := os.Open("lafiancee.json")
+	if err != nil {
+		fmt.Println("Could't open the json file")
+		return err
+	}
+
+	defer jsonFile.Close()
+
+	byteValue, _ := ioutil.ReadAll(jsonFile)
+
+	var result map[string]interface{}
+	json.Unmarshal([]byte(byteValue), &result)
+
+	fmt.Println(result["data"])
+
+	return nil
 }
