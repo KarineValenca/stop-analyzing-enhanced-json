@@ -14,7 +14,6 @@ type Result struct {
 	Data struct {
 		Catalog struct {
 			Category struct {
-				//NumOfProducts        int32       `json:"numOfProducts"`
 				ProductsWithMetadata struct {
 					List []struct {
 						URLPart string `json:"urlPart"`
@@ -34,7 +33,7 @@ func main() {
 
 	data, _ := fetchData(jsonQuery, authorizationToken)
 	fmt.Println(string(data))
-	readJSON()
+	fmt.Println(getUrlPart())
 }
 
 func fetchData(jsonQuery map[string]string, authorizationToken string) ([]byte, error) {
@@ -68,11 +67,11 @@ func fetchData(jsonQuery map[string]string, authorizationToken string) ([]byte, 
 	return data, nil
 }
 
-func readJSON() error {
+func getUrlPart() ([]string, error) {
 	jsonFile, err := os.Open("lafiancee.json")
 	if err != nil {
 		fmt.Println("Could't open the json file")
-		return err
+		return nil, err
 	}
 
 	defer jsonFile.Close()
@@ -83,7 +82,12 @@ func readJSON() error {
 	var result Result
 	json.Unmarshal([]byte(byteValue), &result)
 
-	fmt.Println(result.Data.Catalog.Category.ProductsWithMetadata.List[0].URLPart)
+	productList := result.Data.Catalog.Category.ProductsWithMetadata.List
 
-	return nil
+	var URLPartArr []string
+	for _, element := range productList {
+		URLPartArr = append(URLPartArr, element.URLPart)
+	}
+
+	return URLPartArr, nil
 }
