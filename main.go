@@ -10,11 +10,19 @@ import (
 	"time"
 )
 
-type Dresses struct {
-	Dresses []Dress `json:"dresses"`
-}
-type Dress struct {
-	Slug string `json:"urlPart"`
+type Result struct {
+	Data struct {
+		Catalog struct {
+			Category struct {
+				//NumOfProducts        int32       `json:"numOfProducts"`
+				ProductsWithMetadata struct {
+					List []struct {
+						URLPart string `json:"urlPart"`
+					} `json:"list"`
+				} `json:"productsWithMetadata"`
+			} `json:"category"`
+		} `json:"catalog"`
+	} `json:"data"`
 }
 
 func main() {
@@ -71,10 +79,11 @@ func readJSON() error {
 
 	byteValue, _ := ioutil.ReadAll(jsonFile)
 
-	var result map[string]interface{}
+	//var result map[string]interface{}
+	var result Result
 	json.Unmarshal([]byte(byteValue), &result)
 
-	fmt.Println(result["data"])
+	fmt.Println(result.Data.Catalog.Category.ProductsWithMetadata.List[0].URLPart)
 
 	return nil
 }
