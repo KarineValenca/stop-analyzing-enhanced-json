@@ -24,18 +24,45 @@ type Result struct {
 	} `json:"data"`
 }
 
-func main() {
-	//productID := "allure-3110"
+type ProductResult struct {
+	Data struct {
+		Catalog struct {
+			Product struct {
+				ID    string `json:"id"`
+				Title string `json:"name"`
+				Media []struct {
+					FullUrl string `json:"fullUrl"`
+				} `json:"media"`
+				Options []struct {
+					Title      string `json:"title"`
+					Selections []struct {
+						Value string `json:"value"`
+					} `json:"selections"`
+				} `json:"options"`
+			} `json:"product"`
+		} `json:"catalog"`
+	} `json:"data"`
+}
 
+type Product struct {
+	ID         string
+	Title      string
+	Subtitle   string
+	ContentURL string
+	Media      []string
+	Attributes []map[string]string
+}
+
+func main() {
 	authorizationToken := "brUTfgwc9eaqQ4m_KjbIkjnR-MRt9rGfCLGikGEPiRU.eyJpbnN0YW5jZUlkIjoiMWI0OTQ1ODItZDg5Zi00MmY2LTg0YzAtNTAxOGE3NzI1Y2MyIiwiYXBwRGVmSWQiOiIxMzgwYjcwMy1jZTgxLWZmMDUtZjExNS0zOTU3MWQ5NGRmY2QiLCJtZXRhU2l0ZUlkIjoiN2RlM2ExNjgtNDEyNC00NDljLTg4ZDYtZmViNjkzYWY3NzRjIiwic2lnbkRhdGUiOiIyMDIwLTA5LTIzVDEyOjI3OjE4LjUyOVoiLCJ2ZW5kb3JQcm9kdWN0SWQiOiJQcmVtaXVtMSIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiOWE0ZjJjNDAtMTIzNC00ZGM3LTg3OWEtMjIzZDMxMzI0N2E1IiwiYmlUb2tlbiI6IjY2YWFlNGVhLTk5YmItMDY2YS0wYzE2LWFlYWUzNGRkMmI4ZSIsInNpdGVPd25lcklkIjoiZmI0Y2Y2ODQtODZkZS00N2E0LWE2NjUtZjE4ZDcxYzA3YzUxIn0"
 
 	URLPartArr, _ := getUrlPart()
 	for _, element := range URLPartArr {
 		fmt.Println("Getting data from api...")
 		data, _ := fetchData(element, authorizationToken)
-		fmt.Println(string(data))
+		//fmt.Println(string(data))
+		buildAggregatedJson(data)
 	}
-	//fmt.Println(URLPartArr)
 }
 
 func getUrlPart() ([]string, error) {
@@ -51,6 +78,7 @@ func getUrlPart() ([]string, error) {
 
 	//var result map[string]interface{}
 	var result Result
+	//var result2 AggregatedJson
 	json.Unmarshal([]byte(byteValue), &result)
 
 	productList := result.Data.Catalog.Category.ProductsWithMetadata.List
@@ -95,4 +123,35 @@ func fetchData(productID string, authorizationToken string) ([]byte, error) {
 	}
 
 	return data, nil
+}
+
+func buildAggregatedJson(data []byte) {
+	var pr ProductResult
+
+	json.Unmarshal(data, &pr)
+
+	var product Product
+	product.ID = ""
+	product.Title = pr.Data.Catalog.Product.Title
+	product.Subtitle = ""
+	product.ContentURL = ""
+
+	for _, element := range pr.Data.Catalog.Product.Media {
+		product.Media = append(product.Media, element.FullUrl)
+	}
+
+	for _, element := range pr.Data.Catalog.Product.Options {
+		for _, value := range element.Selections {
+			m := make(map[string]string)
+			m[element.Title] = value.Value
+			product.Attributes = append(product.Attributes, m)
+		}
+	}
+	fmt.Println(product)
+	p, err := json.Marshal(product)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println("Product json...")
+	fmt.Println(string(p))
 }
