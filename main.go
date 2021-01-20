@@ -45,15 +45,16 @@ type ProductResult struct {
 }
 
 type Product struct {
-	ID         string
-	Title      string
-	Subtitle   string
-	ContentURL string
-	Media      []string
-	Attributes []map[string]string
+	ID         string              `json:"id"`
+	Title      string              `json:"title"`
+	Subtitle   string              `json:"subtitle"`
+	ContentURL string              `json:"contentURL"`
+	Media      []string            `json:"media"`
+	Attributes []map[string]string `json:"attributes"`
 }
 
 func main() {
+	var aggregatedJSON []Product
 	authorizationToken := "brUTfgwc9eaqQ4m_KjbIkjnR-MRt9rGfCLGikGEPiRU.eyJpbnN0YW5jZUlkIjoiMWI0OTQ1ODItZDg5Zi00MmY2LTg0YzAtNTAxOGE3NzI1Y2MyIiwiYXBwRGVmSWQiOiIxMzgwYjcwMy1jZTgxLWZmMDUtZjExNS0zOTU3MWQ5NGRmY2QiLCJtZXRhU2l0ZUlkIjoiN2RlM2ExNjgtNDEyNC00NDljLTg4ZDYtZmViNjkzYWY3NzRjIiwic2lnbkRhdGUiOiIyMDIwLTA5LTIzVDEyOjI3OjE4LjUyOVoiLCJ2ZW5kb3JQcm9kdWN0SWQiOiJQcmVtaXVtMSIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiOWE0ZjJjNDAtMTIzNC00ZGM3LTg3OWEtMjIzZDMxMzI0N2E1IiwiYmlUb2tlbiI6IjY2YWFlNGVhLTk5YmItMDY2YS0wYzE2LWFlYWUzNGRkMmI4ZSIsInNpdGVPd25lcklkIjoiZmI0Y2Y2ODQtODZkZS00N2E0LWE2NjUtZjE4ZDcxYzA3YzUxIn0"
 
 	URLPartArr, _ := getUrlPart()
@@ -61,8 +62,14 @@ func main() {
 		fmt.Println("Getting data from api...")
 		data, _ := fetchData(element, authorizationToken)
 		//fmt.Println(string(data))
-		buildAggregatedJson(data)
+		product := buildProduct(data)
+		aggregatedJSON = append(aggregatedJSON, product)
 	}
+	p, err := json.Marshal(aggregatedJSON)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(string(p))
 }
 
 func getUrlPart() ([]string, error) {
@@ -125,7 +132,7 @@ func fetchData(productID string, authorizationToken string) ([]byte, error) {
 	return data, nil
 }
 
-func buildAggregatedJson(data []byte) {
+func buildProduct(data []byte) Product {
 	var pr ProductResult
 
 	json.Unmarshal(data, &pr)
@@ -147,11 +154,12 @@ func buildAggregatedJson(data []byte) {
 			product.Attributes = append(product.Attributes, m)
 		}
 	}
-	fmt.Println(product)
-	p, err := json.Marshal(product)
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println("Product json...")
-	fmt.Println(string(p))
+	//aggregatedJson = append(aggregatedJson, product)
+
+	//p, err := json.Marshal(aggregatedJson)
+	//if err != nil {
+	//	fmt.Println(err)
+	//}
+
+	return product
 }
