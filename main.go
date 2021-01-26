@@ -59,19 +59,19 @@ func main() {
 	var aggregatedJSON []Product
 	authorizationToken := "brUTfgwc9eaqQ4m_KjbIkjnR-MRt9rGfCLGikGEPiRU.eyJpbnN0YW5jZUlkIjoiMWI0OTQ1ODItZDg5Zi00MmY2LTg0YzAtNTAxOGE3NzI1Y2MyIiwiYXBwRGVmSWQiOiIxMzgwYjcwMy1jZTgxLWZmMDUtZjExNS0zOTU3MWQ5NGRmY2QiLCJtZXRhU2l0ZUlkIjoiN2RlM2ExNjgtNDEyNC00NDljLTg4ZDYtZmViNjkzYWY3NzRjIiwic2lnbkRhdGUiOiIyMDIwLTA5LTIzVDEyOjI3OjE4LjUyOVoiLCJ2ZW5kb3JQcm9kdWN0SWQiOiJQcmVtaXVtMSIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiOWE0ZjJjNDAtMTIzNC00ZGM3LTg3OWEtMjIzZDMxMzI0N2E1IiwiYmlUb2tlbiI6IjY2YWFlNGVhLTk5YmItMDY2YS0wYzE2LWFlYWUzNGRkMmI4ZSIsInNpdGVPd25lcklkIjoiZmI0Y2Y2ODQtODZkZS00N2E0LWE2NjUtZjE4ZDcxYzA3YzUxIn0"
 
-	URLPartArr, _ := getURLPart()
-	fmt.Println("Getting data from api...")
+	URLPartArr, err := getURLPart()
+	if err != nil {
+		log.Fatalln(err)
+	}
+	log.Println("Getting data from api...")
 
 	for _, element := range URLPartArr {
 		data, _ := fetchData(element, authorizationToken)
 		product := buildProduct(data)
 		aggregatedJSON = append(aggregatedJSON, product)
 	}
-	p, err := json.Marshal(aggregatedJSON)
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println(string(p))
+
+	log.Println("Writing to json file...")
 	file, err := json.MarshalIndent(aggregatedJSON, "", " ")
 
 	if err != nil {
@@ -86,7 +86,7 @@ func main() {
 func getURLPart() ([]string, error) {
 	jsonFile, err := os.Open("lafiancee.json")
 	if err != nil {
-		fmt.Println("Could't open the json file")
+		log.Println("Could't open the json file")
 		return nil, err
 	}
 
@@ -114,7 +114,7 @@ func fetchData(productID string, authorizationToken string) ([]byte, error) {
 	jsonValue, err := json.Marshal(jsonQuery)
 
 	if err != nil {
-		fmt.Println("Could't marshall json", err)
+		log.Println("Could't marshall json", err)
 		return nil, err
 	}
 
@@ -126,7 +126,7 @@ func fetchData(productID string, authorizationToken string) ([]byte, error) {
 	response, err := client.Do(req)
 
 	if err != nil {
-		fmt.Println("Error getting response", err)
+		log.Println("Error getting response", err)
 		return nil, err
 	}
 
@@ -134,7 +134,7 @@ func fetchData(productID string, authorizationToken string) ([]byte, error) {
 	data, err := ioutil.ReadAll(response.Body)
 
 	if err != nil {
-		fmt.Println("Error reading the data", err)
+		log.Println("Error reading the data", err)
 		return nil, err
 	}
 
