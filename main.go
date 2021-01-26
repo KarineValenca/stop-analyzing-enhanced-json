@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"os"
 	"time"
@@ -59,7 +60,6 @@ func main() {
 	authorizationToken := "brUTfgwc9eaqQ4m_KjbIkjnR-MRt9rGfCLGikGEPiRU.eyJpbnN0YW5jZUlkIjoiMWI0OTQ1ODItZDg5Zi00MmY2LTg0YzAtNTAxOGE3NzI1Y2MyIiwiYXBwRGVmSWQiOiIxMzgwYjcwMy1jZTgxLWZmMDUtZjExNS0zOTU3MWQ5NGRmY2QiLCJtZXRhU2l0ZUlkIjoiN2RlM2ExNjgtNDEyNC00NDljLTg4ZDYtZmViNjkzYWY3NzRjIiwic2lnbkRhdGUiOiIyMDIwLTA5LTIzVDEyOjI3OjE4LjUyOVoiLCJ2ZW5kb3JQcm9kdWN0SWQiOiJQcmVtaXVtMSIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiOWE0ZjJjNDAtMTIzNC00ZGM3LTg3OWEtMjIzZDMxMzI0N2E1IiwiYmlUb2tlbiI6IjY2YWFlNGVhLTk5YmItMDY2YS0wYzE2LWFlYWUzNGRkMmI4ZSIsInNpdGVPd25lcklkIjoiZmI0Y2Y2ODQtODZkZS00N2E0LWE2NjUtZjE4ZDcxYzA3YzUxIn0"
 
 	URLPartArr, _ := getURLPart()
-	fmt.Println(URLPartArr)
 	fmt.Println("Getting data from api...")
 
 	for _, element := range URLPartArr {
@@ -72,6 +72,15 @@ func main() {
 		fmt.Println(err)
 	}
 	fmt.Println(string(p))
+	file, err := json.MarshalIndent(aggregatedJSON, "", " ")
+
+	if err != nil {
+		log.Fatalln("Couldn't marshal to file", err)
+	}
+
+	if err := ioutil.WriteFile("enhanced.json", file, 0644); err != nil {
+		log.Fatalln("Error writing to file", err)
+	}
 }
 
 func getURLPart() ([]string, error) {
